@@ -21,3 +21,11 @@ __pycache__/
 dist/
 build/
 *.egg-info/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Additional Python ignores
+*.so
+*.egg
