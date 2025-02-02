@@ -1,23 +1,28 @@
 ﻿#!/bin/bash
-# Release script for AI Content Personalization
+# Release Preparation and Publication Script
 
-# Ensure you're on the main branch
+# Ensure we're on the main branch
 git checkout main
 git pull origin main
 
 # Run tests
+echo "Running tests..."
 python -m pytest tests/
 
 # Build documentation
+echo "Building documentation..."
 sphinx-build docs docs/_build
 
 # Build package
+echo "Building package..."
 python -m build
 
 # Show distribution files
+echo "Distribution files:"
 ls dist/
 
-echo "Ready for release. Next steps:"
-echo "1. Commit changes"
-echo "2. Create GitHub release"
-echo "3. Upload to PyPI"
+# Suggest release tag
+echo ""
+echo "Suggested git tag command:"
+echo "git tag -a v0.1.0 -m 'Release version 0.1.0'"
+echo "git push origin v0.1.0"
