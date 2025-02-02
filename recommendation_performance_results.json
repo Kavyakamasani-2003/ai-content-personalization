@@ -1,0 +1,472 @@
+{
+  "benchmark_metadata": {
+    "timestamp": 1738417908.0545824,
+    "similarity_metrics": [
+      "cosine",
+      "euclidean"
+    ],
+    "cache_strategies": [
+      "lru",
+      "lfu",
+      "fifo"
+    ],
+    "corpus_sizes": [
+      100,
+      500,
+      1000,
+      5000
+    ]
+  },
+  "results": {
+    "lru": {
+      "cosine": {
+        "100": {
+          "addition_time": {
+            "mean": 0.011976861953735351,
+            "std_dev": 0.0024558288965061633
+          },
+          "recommendation_time": {
+            "mean": 0.0017703056335449218,
+            "std_dev": 0.001243701524308005
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.04201540946960449,
+            "std_dev": 0.0036076992384219157
+          },
+          "recommendation_time": {
+            "mean": 0.0022801876068115233,
+            "std_dev": 0.001309289714444301
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.09703764915466309,
+            "std_dev": 0.020271279225250623
+          },
+          "recommendation_time": {
+            "mean": 0.0033455848693847655,
+            "std_dev": 0.00043490661621577913
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.5224642276763916,
+            "std_dev": 0.035111685417345835
+          },
+          "recommendation_time": {
+            "mean": 0.005595254898071289,
+            "std_dev": 0.0023456216602135435
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      },
+      "euclidean": {
+        "100": {
+          "addition_time": {
+            "mean": 0.009173822402954102,
+            "std_dev": 0.0030470003236433008
+          },
+          "recommendation_time": {
+            "mean": 0.0017754554748535157,
+            "std_dev": 0.0016949838253667944
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.0406400203704834,
+            "std_dev": 0.00870724617487845
+          },
+          "recommendation_time": {
+            "mean": 0.0031377792358398436,
+            "std_dev": 0.0022033875366199033
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.08235459327697754,
+            "std_dev": 0.020950157420868257
+          },
+          "recommendation_time": {
+            "mean": 0.005034780502319336,
+            "std_dev": 0.002842731639213851
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.48025169372558596,
+            "std_dev": 0.06141126945338959
+          },
+          "recommendation_time": {
+            "mean": 0.005620479583740234,
+            "std_dev": 0.002150935102355158
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      }
+    },
+    "lfu": {
+      "cosine": {
+        "100": {
+          "addition_time": {
+            "mean": 0.008220672607421875,
+            "std_dev": 0.005359478618248854
+          },
+          "recommendation_time": {
+            "mean": 0.0015447616577148437,
+            "std_dev": 0.0009261214558434517
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.03229775428771973,
+            "std_dev": 0.007942740468723931
+          },
+          "recommendation_time": {
+            "mean": 0.0019883632659912108,
+            "std_dev": 0.0005105337484489496
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.08065485954284668,
+            "std_dev": 0.00365473932224411
+          },
+          "recommendation_time": {
+            "mean": 0.0014278888702392578,
+            "std_dev": 0.0014014971626758125
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.44211363792419434,
+            "std_dev": 0.03502006733289145
+          },
+          "recommendation_time": {
+            "mean": 0.005036354064941406,
+            "std_dev": 0.0035351289320872795
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      },
+      "euclidean": {
+        "100": {
+          "addition_time": {
+            "mean": 0.008320760726928712,
+            "std_dev": 0.0022648968519461076
+          },
+          "recommendation_time": {
+            "mean": 0.0017371654510498046,
+            "std_dev": 0.0010829264947804444
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.030571460723876953,
+            "std_dev": 0.010740398863824555
+          },
+          "recommendation_time": {
+            "mean": 0.004277658462524414,
+            "std_dev": 0.005205636667855205
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.04570283889770508,
+            "std_dev": 0.002120149970720046
+          },
+          "recommendation_time": {
+            "mean": 0.0025396347045898438,
+            "std_dev": 0.003765200124872791
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.36253108978271487,
+            "std_dev": 0.07187105470969984
+          },
+          "recommendation_time": {
+            "mean": 0.0076848030090332035,
+            "std_dev": 0.006297973739498349
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      }
+    },
+    "fifo": {
+      "cosine": {
+        "100": {
+          "addition_time": {
+            "mean": 0.006772661209106445,
+            "std_dev": 0.003496594138764032
+          },
+          "recommendation_time": {
+            "mean": 0.002509927749633789,
+            "std_dev": 0.0009136862951016327
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.04088301658630371,
+            "std_dev": 0.003804641177443998
+          },
+          "recommendation_time": {
+            "mean": 0.0031391143798828124,
+            "std_dev": 0.0024171828840315636
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.07143926620483398,
+            "std_dev": 0.014841687896063048
+          },
+          "recommendation_time": {
+            "mean": 0.0025205612182617188,
+            "std_dev": 0.0009321266232072403
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.4345987796783447,
+            "std_dev": 0.02638141452539236
+          },
+          "recommendation_time": {
+            "mean": 0.001245880126953125,
+            "std_dev": 0.0013278010003158784
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      },
+      "euclidean": {
+        "100": {
+          "addition_time": {
+            "mean": 0.008794879913330078,
+            "std_dev": 0.0029887887507200925
+          },
+          "recommendation_time": {
+            "mean": 0.002071714401245117,
+            "std_dev": 0.002220682638260851
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "500": {
+          "addition_time": {
+            "mean": 0.03522281646728516,
+            "std_dev": 0.004090729207778691
+          },
+          "recommendation_time": {
+            "mean": 0.004067516326904297,
+            "std_dev": 0.005393784770450325
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "1000": {
+          "addition_time": {
+            "mean": 0.06607880592346191,
+            "std_dev": 0.0044786246477036985
+          },
+          "recommendation_time": {
+            "mean": 0.0031888484954833984,
+            "std_dev": 0.003786243206089504
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        },
+        "5000": {
+          "addition_time": {
+            "mean": 0.3955432415008545,
+            "std_dev": 0.003758734982415043
+          },
+          "recommendation_time": {
+            "mean": 0.006900167465209961,
+            "std_dev": 0.004567909776813505
+          },
+          "recommendation_count": {
+            "mean": 5,
+            "std_dev": 0.0
+          },
+          "cache_hit_rate": {
+            "mean": 1.0,
+            "std_dev": 0.0
+          }
+        }
+      }
+    }
+  }
+}

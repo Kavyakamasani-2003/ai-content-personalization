@@ -1,0 +1,23 @@
+﻿# Virtual environment
+venv/
+*.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.class
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
