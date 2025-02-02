@@ -1,5 +1,7 @@
 ﻿"""
-Version information for AI Content Personalization project.
+AI Content Personalization Package
+
+A machine learning-powered content recommendation system.
 """
 
 __version__ = "0.1.0"
