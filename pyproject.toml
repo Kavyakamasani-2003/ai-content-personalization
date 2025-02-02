@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-content-personalization"
+version = "0.1.0"
+description = "An advanced AI-powered content recommendation system"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Kavya Kamasani", email = "kavyakamasani3464@gmail.com"}
+]
+keywords = ["ai", "recommendation", "machine-learning", "nlp"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "numpy>=1.21.0",
+    "scikit-learn>=1.0.0",
+    "nltk>=3.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "mypy",
+    "sphinx",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kavyakamasani-2003/ai-content-personalization"
+Repository = "https://github.com/Kavyakamasani-2003/ai-content-personalization"
+Documentation = "https://ai-content-personalization.readthedocs.io"
+
+[project.scripts]
+ai-recommender = "src.ml_predictors.advanced_recommender:main"
